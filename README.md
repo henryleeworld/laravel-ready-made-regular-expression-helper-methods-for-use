@@ -1,4 +1,4 @@
-# Laravel 9 現成的正規表達式輔助方法
+# Laravel 10 現成的正規表達式輔助方法
 
 引入 hotmeteor 的 regex 套件來擴增現成的正規表達式輔助方法，正規表達式是被用來匹配字串中字元組合的模式。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/sdnENRh.png)
+![](https://i.imgur.com/R3qzfog.png)
 > 用一套簡單（但功能強大）的符號來比對字串
