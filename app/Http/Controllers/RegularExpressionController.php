@@ -8,10 +8,10 @@ class RegularExpressionController extends Controller
 {
     public function show() 
     {
-        $subject = 'SLAM DUNK灌籃高手總集篇(全)';
-        echo $subject . '是否為字母字元組成：' . (Regex::isAlpha($subject, $allowWhitespace = false) ? '是' : '否') . PHP_EOL;
-        echo $subject . '是否為字母數字組成：' . (Regex::isAlphanumeric($subject, $allowWhitespace = false) ? '是' : '否') . PHP_EOL;
-        echo $subject . '是否為字母數字破折號組成：' . (Regex::isAlphadash($subject, $allowWhitespace = false) ? '是' : '否') . PHP_EOL;
-        echo $subject . '是否為數字組成：' . (Regex::isDigits($subject, $allowWhitespace = false) ? '是' : '否') . PHP_EOL;
+        $subject = __('Slam Dunk Jump Special Issue');
+        echo $subject . __(' contains only alphabets: ') . (Regex::isAlpha($subject, $allowWhitespace = false) ? __('Yes') : __('No')) . PHP_EOL;
+        echo $subject . __(' contains only alphanumerics: ') . (Regex::isAlphanumeric($subject, $allowWhitespace = false) ? __('Yes') : __('No')) . PHP_EOL;
+        echo $subject . __(' contains only alphanumerics and dashes: ') . (Regex::isAlphadash($subject, $allowWhitespace = false) ? __('Yes') : __('No')) . PHP_EOL;
+        echo $subject . __(' contains only numerics: ') . (Regex::isDigits($subject, $allowWhitespace = false) ? __('Yes') : __('No')) . PHP_EOL;
     }
 }
